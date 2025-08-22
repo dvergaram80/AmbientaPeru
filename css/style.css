@@ -42,7 +42,7 @@ header {
     align-items: center;
     padding: 15px 0;
 }
-
+/*
 .logo {
     font-size: 2rem;
     font-weight: bold;
@@ -50,6 +50,37 @@ header {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}*/
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex; /* Para alinear los dos span */
+}
+
+.logo-part.green {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.logo-part.orange {
+    color: var(--accent);
+    font-weight: 800; /* Más negrita */
+}
+
+/* Opcional: agregar espacio entre palabras */
+.logo-part {
+    margin-right: 2px;
+}
+.logo-part {
+    transition: color 0.3s ease;
+}
+
+.logo-part.green:hover {
+    color: var(--secondary); /* Verde más claro al pasar mouse */
+}
+
+.logo-part.orange:hover {
+    color: var(--accent-light); /* Naranja más claro */
 }
 
 .nav-menu {
