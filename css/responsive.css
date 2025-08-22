@@ -56,7 +56,7 @@
     .footer-content {
         grid-template-columns: 1fr;
     }
-    /* Botón hamburguesa */
+/* Botón hamburguesa */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -71,6 +71,8 @@
     margin: 3px 0;
     transition: 0.3s;
 }
+
+/* Animación del botón hamburguesa a X */
 .hamburger.active span:nth-child(1) {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -82,7 +84,6 @@
 .hamburger.active span:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
 }
-
 
 /* Menú responsive */
 @media (max-width: 768px) {
